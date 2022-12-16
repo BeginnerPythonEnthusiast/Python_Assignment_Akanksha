@@ -43,6 +43,7 @@ def cost(abb, name_list):
             score+=min(l)+cost_map[j]
     return score
 
+# Creating the abbrevations from the names
 def abbrev(name_list):
     name = "".join(name_list)
     n = len(name)
@@ -76,14 +77,14 @@ if __name__ == "__main__":
 
     for i in data:
             mylist.append(set(abbrev(i).keys()))
-
+# Saving our final result in different file named as Final_Result.txt
     for i in range(len(mylist)):
         for j in range(i + 1, len(mylist)):
             temp = mylist[i].intersection(mylist[j])
             if len(temp)>0:
                 common+=temp
     out = open("Final_Result.txt","w")
-
+# This will store the name with the smallest calculated score abbrevation
     for i in range(len(data)):
         temp = abbrev(data[i])
         out.write(" ".join(data1[i]) + "\n")
