@@ -1,7 +1,6 @@
 *# Python-Akanksha_Tiwari
 
-Name of Student - Akanksha Tiwari
-Student ID - 2506868
+
 
 *#Prerequisite to execute the code* 
 1. Have Vs code integrated with Git Bash
